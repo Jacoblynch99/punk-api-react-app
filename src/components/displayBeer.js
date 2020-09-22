@@ -12,6 +12,10 @@ function DisplayBeer(props) {
             <p>
               {props.beers[index][1]}
             </p>
+            <p>
+              {props.beers[index][2]}
+            </p>
+            
             <Likes/>
       
           </li>

@@ -2,4 +2,17 @@
   text-align: center;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
 

@@ -23,15 +23,11 @@ class AxiosComp extends Component {
       let beerSpecs = []
 
       for (let i = 0; i < retrievedBeers.length; i++) {
-        beerSpecs.push([retrievedBeers[i].name, retrievedBeers[i].tagline, retrievedBeers.img_url])
+        beerSpecs.push([retrievedBeers[i].name, retrievedBeers[i].tagline, retrievedBeers.brewers_tips, retrievedBeers.img_url])
       }
 
-      
-
       this.setState({beers: beerSpecs})
-      
-      
-    };
+  };
 
   render() {
     return (
@@ -39,7 +35,9 @@ class AxiosComp extends Component {
         <button onClick={this.consoleBeers}>
           BUBBA HOLD MY BEER
         </button>
+        <div className="grid-container">
         <DisplayBeer beers={this.state.beers}/>
+        </div>
       </div>
     )
   }
